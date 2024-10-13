@@ -11,8 +11,8 @@ public class HomePage extends Page {
 
     public HomePage(){
         this.homePageLocators = new HomePageLocators();
-       // AjaxElementLocatorFactoTry factory = new AjaxElementLocatorFactory(driver, 10);
         PageFactory.initElements(factory,homePageLocators);
+        PageFactory.initElements(driver,homePageLocators);
     }
 
     public void gotoLogin(){

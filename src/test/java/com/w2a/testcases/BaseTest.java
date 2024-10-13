@@ -2,23 +2,13 @@ package com.w2a.testcases;
 
 import com.w2a.base.Page;
 import com.w2a.pages.App;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeTest;
 
-public class  BaseTest extends Page  {
+public class BaseTest{
+    public App app;
 
-    public static App app;
-    public BaseTest(){
-        start();
-        this.app = new App();
+    public BaseTest() {
 
+        this.app = new App(); // Only initialize App, not WebDriver
     }
-
-
-
-//    @BeforeTest
-//    public void start(){
-//        Page.start();
-//    }
-
 }
+
