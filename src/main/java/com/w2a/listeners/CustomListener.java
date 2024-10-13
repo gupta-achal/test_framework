@@ -52,8 +52,7 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
                 throw new SkipException(" .................... ");
             }
         }
-
-        if (!TestUtil.isTestRunnable(name, getExcel())) {
+        else if (!TestUtil.isTestRunnable(name, getExcel())) {
             test.log(LogStatus.SKIP, "Skipping the test case since it is disabled.");
             result.setStatus(ITestResult.SKIP);
             System.out.println("Test Case name: " + name);
@@ -67,6 +66,7 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
 
     @Override
     public void onTestSuccess(ITestResult result) {
+        Page.quit();
         test.log(LogStatus.PASS, result.getName().toUpperCase() + " PASS");
         rep.endTest(test);
     }
@@ -88,13 +88,15 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
         } catch (Exception ex) {
             test.log(LogStatus.ERROR, "Error capturing screenshot: " + ex.getMessage());
         } finally {
+            Page.quit();
             rep.endTest(test);
         }
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        test.log(LogStatus.SKIP, result.getName().toUpperCase() + " Skipped as the Run mode is NO");
+        test.log(LogStatus.SKIP, result.getName().toUpperCase()
+                + " Skipped as the Run mode is NO or the environment issue");
         rep.endTest(test);
     }
 

@@ -6,8 +6,9 @@ import org.testng.annotations.Test;
 
 public class Login {
     @Test(priority = 1)
-    @Environment(Environment.Level.CAE)
+    @Environment(Environment.Level.PROD)
     public void login(){
+        App app = new App();
         App.homePage.gotoLogin();
         App.loginPage.login();
     }

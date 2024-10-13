@@ -1,49 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extentreports>
     <configuration>
-        <!-- report theme -->
-        <!-- standard, dark -->
+        <!--
+        The theme for the report:
+        Options: 'standard', 'dark'
+        -->
         <theme>standard</theme>
-    
-        <!-- document encoding -->
-        <!-- defaults to UTF-8 -->
+
+        <!--
+        Document encoding, default is UTF-8
+        -->
         <encoding>UTF-8</encoding>
-        
-        <!-- protocol for script and stylesheets -->
-        <!-- defaults to https -->
+
+        <!--
+        Protocol for loading external scripts and stylesheets
+        Default: https
+        -->
         <protocol>https</protocol>
-        
-        <!-- title of the document -->
-        <documentTitle>W2A Automation Reports</documentTitle>
-        
-        <!-- report name - displayed at top-nav -->
-        <reportName>Automation Report for</reportName>
-        
-        <!-- report headline - displayed at top-nav, after reportHeadline -->
-        <reportHeadline>Data Driven Framework</reportHeadline>
-        
-        <!-- global date format override -->
-        <!-- defaults to yyyy-MM-dd -->
+
+        <!--
+        Title of the report document (appears in the browser tab)
+        -->
+        <documentTitle>Automation Reports</documentTitle>
+
+        <!--
+        Report name displayed at the top of the report navigation bar
+        -->
+        <reportName>Automation Report</reportName>
+
+        <!--
+        Headline of the report displayed under the report name
+        -->
+        <reportHeadline>Testing Framework</reportHeadline>
+
+        <!--
+        Global date format, defaults to 'yyyy-MM-dd'
+        -->
         <dateFormat>yyyy-MM-dd</dateFormat>
-        
-        <!-- global time format override -->
-        <!-- defaults to HH:mm:ss -->
+
+        <!--
+        Global time format, defaults to 'HH:mm:ss'
+        -->
         <timeFormat>HH:mm:ss</timeFormat>
-        
-        <!-- custom javascript -->
+
+        <!--
+        Custom JavaScript for the report
+        You can add your own JS/jQuery to enhance the report functionality
+        -->
         <scripts>
             <![CDATA[
                 $(document).ready(function() {
-                    
+                    // Custom JavaScript can be added here
                 });
             ]]>
         </scripts>
-        
-        <!-- custom styles -->
+
+        <!--
+        Custom CSS styles for the report
+        You can add CSS to customize the appearance
+        -->
         <styles>
             <![CDATA[
-                
+                /* Add custom CSS styling for your report here */
             ]]>
         </styles>
+
+        <!--
+        Additional configurations or extensions can be added below as needed
+        -->
     </configuration>
 </extentreports>

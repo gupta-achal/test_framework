@@ -40,8 +40,7 @@ public class Page {
     public static ExtentTest test;
     public static AjaxElementLocatorFactory factory;
 
-    public Page() {
-    }
+    public Page() {}
 
     @BeforeTest
     public static void start() {

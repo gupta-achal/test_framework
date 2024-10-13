@@ -14,7 +14,7 @@
 	<test name="Framework Testing">
 		<classes>
 			<class name="com.w2a.testcases.Login" />
-
+            <class name="com.w2a.testcases.CrmHomePageTest"></class>
 		</classes>
 	</test>
 
