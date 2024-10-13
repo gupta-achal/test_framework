@@ -7,6 +7,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
+
 public @interface Environment {
     Level value(); // This should match how you use it
 
@@ -14,6 +15,7 @@ public @interface Environment {
         PROD,
         STAGE,
         DEV,
-        QA
+        QA,
+        CAE
     }
 }
