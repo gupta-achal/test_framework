@@ -40,14 +40,14 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
         String name = result.getName().toLowerCase();
         Method method = result.getMethod().getConstructorOrMethod().getMethod();
 
-        boolean skipTest = false;
+        String environment = System.getenv("environment") != null && !System.getenv("environment").isEmpty() ?
+                System.getenv("environment") : config.getProperty("environment");
 
         if (method.isAnnotationPresent(Environment.class)) {
             Environment env = method.getAnnotation(Environment.class);
-            if (env.value() == Environment.Level.PROD) {
+            if (!environment.equals(env.value().toString())) {
                 System.out.println("Skipping the test due to environment.......");
                 test.log(LogStatus.SKIP, "Environment not supported");
-                skipTest = true;
                 result.setStatus(ITestResult.SKIP);
                 throw new SkipException(" .................... ");
             }
@@ -58,12 +58,12 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
             result.setStatus(ITestResult.SKIP);
             System.out.println("Test Case name: " + name);
             System.out.println("Skipping the test case..........................................................");
-            skipTest = true;
+
             throw new SkipException("................................................................");
         }
 
         configureDriver();
-    }
+     }
 
     @Override
     public void onTestSuccess(ITestResult result) {

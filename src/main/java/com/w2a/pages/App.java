@@ -1,8 +1,6 @@
 package com.w2a.pages;
 
-import com.w2a.base.Page;
 import com.w2a.pages.crm.accounts.CrmHomePage;
-import org.openqa.selenium.WebDriver;
 
 public class App {
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Framework Testing"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="1"
+           time="1.166">
+  <properties />
+  
+            <testcase name="login" time="0.0" classname="com.w2a.testcases.Login">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

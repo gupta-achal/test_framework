@@ -46,7 +46,7 @@ public class Page {
     @BeforeTest
     public static void start() {
         initializeProperties();
-        initializeWebDriver(); // Download the WebDriver without launching the browser
+         initializeWebDriver(); // Download the WebDriver without launching the browser
     }
 
     private static void initializeProperties() {
