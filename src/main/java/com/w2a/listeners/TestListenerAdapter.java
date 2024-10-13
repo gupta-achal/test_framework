@@ -1,30 +1,20 @@
-package com.w2a.errorController;
+package com.w2a.listeners;
 
-import com.w2a.annotation.NonProduction;
-import com.w2a.annotation.Production;
-import com.w2a.utilities.EnvironmentUtils;
+import com.relevantcodes.extentreports.LogStatus;
+import com.w2a.annotation.Environment;
+import com.w2a.base.Page;
+import com.w2a.errorController.AssertLib;
 import org.testng.*;
 import org.testng.internal.Utils;
 
 import java.lang.reflect.Method;
 import java.util.List;
 
-public class TestListenerAdapter implements IInvokedMethodListener {
+public class TestListenerAdapter extends Page implements IInvokedMethodListener {
 
     @Override
     public void beforeInvocation(IInvokedMethod iInvokedMethod, ITestResult result) {
-        Method method = result.getMethod().getConstructorOrMethod().getMethod();
-        if (method == null) {
-            return;
-        }
-        // Check for NonProduction annotation
-        if (method.isAnnotationPresent(NonProduction.class) && EnvironmentUtils.isProduction()) {
-            throw new SkipException("These Tests shouldn't be run in Production");
-        }
-        // Check for Production annotation
-        if (method.isAnnotationPresent(Production.class) && !EnvironmentUtils.isProduction()) {
-            throw new SkipException("These Tests should be run in Production only");
-        }
+
     }
 
     @Override

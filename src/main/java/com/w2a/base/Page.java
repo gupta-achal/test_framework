@@ -16,7 +16,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import java.io.FileInputStream;
@@ -42,16 +41,13 @@ public class Page {
     public static AjaxElementLocatorFactory factory;
 
     public Page() {
-        //start();
     }
-
 
     @BeforeTest
-    public static void start(){
+    public static void start() {
         initializeProperties();
-        initializeWebDriver();
+        initializeWebDriver(); // Download the WebDriver without launching the browser
     }
-
 
     private static void initializeProperties() {
         // Load properties from configuration files
@@ -80,45 +76,55 @@ public class Page {
         browser = System.getenv("browser") != null && !System.getenv("browser").isEmpty() ?
                 System.getenv("browser") : config.getProperty("browser");
         log.info("Browser set to: " + browser);
-
     }
 
     protected static void initializeWebDriver() {
+        log.info("Setting up WebDriver manager...");
+        switch (browser.toLowerCase()) {
+            case "firefox":
+                log.info("Setting up Firefox driver...");
+                WebDriverManager.firefoxdriver().setup(); // Download and setup FirefoxDriver
+                break;
+
+            case "chrome":
+                log.info("Setting up Chrome driver...");
+                WebDriverManager.chromedriver().clearDriverCache().setup(); // Download and setup ChromeDriver
+                break;
+
+            case "ie":
+                log.info("Setting up Internet Explorer driver...");
+                WebDriverManager.iedriver().setup(); // Download and setup IEDriver
+                break;
+
+            default:
+                log.severe("Unsupported browser: " + browser);
+                throw new IllegalArgumentException("Browser not supported: " + browser);
+        }
+    }
+
+    public static void configureDriver() {
         if (driver == null) {
             synchronized (Page.class) {
                 if (driver == null) {
                     log.info("Initializing WebDriver...");
                     switch (browser.toLowerCase()) {
                         case "firefox":
-                            log.info("Initializing Firefox driver...");
-                             WebDriverManager.firefoxdriver().setup(); // Automatically download and setup FirefoxDriver
                             driver = new FirefoxDriver();
                             break;
 
                         case "chrome":
-                            log.info("Initializing Chrome driver...");
-                            WebDriverManager.chromedriver().clearDriverCache().setup(); // Automatically download and setup ChromeDriver
                             driver = createChromeDriver();
                             break;
 
                         case "ie":
-                            log.info("Initializing Internet Explorer driver...");
-                            WebDriverManager.iedriver().setup(); // Automatically download and setup IEDriver
                             driver = new InternetExplorerDriver();
                             break;
-
-                        default:
-                            log.severe("Unsupported browser: " + browser);
-                            throw new IllegalArgumentException("Browser not supported: " + browser);
                     }
-
+                    factory = new AjaxElementLocatorFactory(driver, 3);
                 }
             }
         }
-        factory = new AjaxElementLocatorFactory(driver,3);
-    }
 
-    public static void configureDriver() {
         log.info("Navigating to test site: " + config.getProperty("testsiteurl"));
         driver.get(config.getProperty("testsiteurl"));
         driver.manage().window().maximize();
@@ -150,25 +156,24 @@ public class Page {
         return driver;
     }
 
-    public static void click(WebElement element){
-        try{
+    public static void click(WebElement element) {
+        try {
             element.click();
-            test.log(LogStatus.INFO,"Clicking on the element: "+element.getText());
-        }catch (ElementClickInterceptedException ex){
+            test.log(LogStatus.INFO, "Clicking on the element: " + element.getText());
+        } catch (ElementClickInterceptedException ex) {
             ex.printStackTrace();
         }
-        test.log(LogStatus.INFO, "Clicking on: "+element.getText());
+        test.log(LogStatus.INFO, "Clicking on: " + element.getText());
     }
 
-    public static void type(WebElement element, String message){
+    public static void type(WebElement element, String message) {
         try {
             element.sendKeys(message);
-        }catch (ElementClickInterceptedException e){
+        } catch (ElementClickInterceptedException e) {
             e.printStackTrace();
         }
-        test.log(LogStatus.INFO, "Entering the text: "+message+" in the element: "+element.getText());
+        test.log(LogStatus.INFO, "Entering the text: " + message + " in the element: " + element.getText());
     }
-
 
     @AfterTest
     public static void quit() {
@@ -180,18 +185,14 @@ public class Page {
         }
     }
 
-
-
-    public static ExcelReader getExcel(String path){
+    public static ExcelReader getExcel(String path) {
         excelReader = new ExcelReader(path);
         return excelReader;
     }
-    public static ExcelReader getExcel(){
+
+    public static ExcelReader getExcel() {
         excelReader = new ExcelReader(
                 System.getProperty("user.dir") + "\\src\\test\\resources\\com\\w2a\\excel\\testdata.xlsx");
         return excelReader;
     }
-
-
-
 }

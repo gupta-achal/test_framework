@@ -14,7 +14,7 @@ import java.util.Hashtable;
 
 public class TestUtil extends Page {
 
-    private static ExcelReader excelReader = getExcel();
+    private static ExcelReader excelReader = Page.getExcel();
     public static String scrName;
 
     @DataProvider(name = "dp")
@@ -35,10 +35,10 @@ public class TestUtil extends Page {
     public static void captureScreen(){
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         Date d = new Date();
-        scrName =
+        scrName = System.getProperty("user.dir")+"\\target\\surefire-reports\\html" +
                 d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
         try {
-            FileUtils.copyFile(scrFile, new File(System.getProperty("user.dr")+"\\target\\surefire-reports\\html\\"+scrName));
+            FileUtils.copyFile(scrFile, new File(scrName));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -49,16 +49,15 @@ public class TestUtil extends Page {
         String sheetName="test_suite";
         int rows = excel.getRowCount(sheetName);
 
-
         for(int rNum=2; rNum<=rows; rNum++){
 
             String testCase = excel.getCellData(sheetName, "TCID", rNum);
 
             if(testCase.equalsIgnoreCase(testName)){
 
-                String runmode = excel.getCellData(sheetName, "Runmode", rNum);
+                String run = excel.getCellData(sheetName, "Runmode", rNum);
 
-                if(runmode.equalsIgnoreCase("Y"))
+                if(run.equalsIgnoreCase("Y"))
                     return true;
                 else
                     return false;
