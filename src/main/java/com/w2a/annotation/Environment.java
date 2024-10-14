@@ -5,8 +5,17 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Certification {
+
+public @interface Environment {
+    Level value(); // This should match how you use it
+
+    enum Level {
+        PROD,
+        STAGE,
+        DEV,
+        QA,
+        CAE
+    }
 }

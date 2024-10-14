@@ -3,18 +3,19 @@
 <suite name="Page Object Model">
     
     <listeners>
-        <listener class-name="com.w2a.listeners.CustomListener"></listener>
+        <listener class-name="com.w2a.listeners.CustomListener" />
+        <listener class-name="com.w2a.listeners.TestListenerAdapter"/>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="com.w2a.errorController.TestListenerAdapter"></listener>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
         
   </listeners>
     
     
-	<test name="Login Test">
+	<test name="Framework Testing">
 		<classes>
 			<class name="com.w2a.testcases.Login" />
-		</classes>
-	</test> <!-- Test -->
 
-</suite> <!-- Suite -->
+		</classes>
+	</test>
+
+</suite>

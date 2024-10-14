@@ -1,9 +1,12 @@
 package com.w2a.listeners;
 
 import com.relevantcodes.extentreports.LogStatus;
+import com.w2a.annotation.Environment;
 import com.w2a.base.Page;
 import com.w2a.utilities.TestUtil;
 import org.testng.*;
+
+import java.lang.reflect.Method;
 
 public class CustomListener extends Page implements ITestListener, ISuiteListener {
 
@@ -30,21 +33,37 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
 
     @Override
     public void onTestStart(ITestResult result) {
+        start();
         System.out.println("Test Case started...................................................................");
         test = rep.startTest(result.getName());
 
-        // Check if the test should run
         String name = result.getName().toLowerCase();
-        if (!TestUtil.isTestRunnable(name, getExcel())) {
-            test.log(LogStatus.INFO, "Skipping the test case since it is disabled.");
-            result.setStatus(ITestResult.SKIP);
-            System.out.println("Skipping the test case...................................................................");
-            throw new SkipException("Skipping the test case as it is disabled in the configuration.");
-        } else {
+        Method method = result.getMethod().getConstructorOrMethod().getMethod();
 
-            configureDriver(); // Ensure driver is configured only if the test will run
+        String environment = System.getenv("environment") != null && !System.getenv("environment").isEmpty() ?
+                System.getenv("environment") : config.getProperty("environment");
+
+        if (method.isAnnotationPresent(Environment.class)) {
+            Environment env = method.getAnnotation(Environment.class);
+            if (!environment.equals(env.value().toString())) {
+                System.out.println("Skipping the test due to environment.......");
+                test.log(LogStatus.SKIP, "Environment not supported");
+                result.setStatus(ITestResult.SKIP);
+                throw new SkipException(" .................... ");
+            }
         }
-    }
+
+        if (!TestUtil.isTestRunnable(name, getExcel())) {
+            test.log(LogStatus.SKIP, "Skipping the test case since it is disabled.");
+            result.setStatus(ITestResult.SKIP);
+            System.out.println("Test Case name: " + name);
+            System.out.println("Skipping the test case..........................................................");
+
+            throw new SkipException("................................................................");
+        }
+
+        configureDriver();
+     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
@@ -58,12 +77,14 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
             TestUtil.captureScreen();
             test.log(LogStatus.FAIL, result.getName().toUpperCase() + " Failed. Exception: " + result.getThrowable());
             test.log(LogStatus.FAIL, test.addScreencast(TestUtil.scrName));
+            result.setStatus(ITestResult.FAILURE);
 
             Reporter.log("Click to see Screenshot");
             Reporter.log("<a target=\"_blank\" href=" + TestUtil.scrName + ">Screenshot</a>");
             Reporter.log("<br>");
             Reporter.log("<br>");
             Reporter.log("<a target=\"_blank\" href=" + TestUtil.scrName + "><img src=" + TestUtil.scrName + " height=200 width=200></img></a>");
+
         } catch (Exception ex) {
             test.log(LogStatus.ERROR, "Error capturing screenshot: " + ex.getMessage());
         } finally {
