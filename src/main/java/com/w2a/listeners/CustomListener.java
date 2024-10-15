@@ -2,16 +2,17 @@ package com.w2a.listeners;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.annotation.Environment;
-import com.w2a.base.Page;
+import com.w2a.base.BasePage;
 import com.w2a.utilities.TestUtil;
 import org.testng.*;
 
 import java.lang.reflect.Method;
 
-public class CustomListener extends Page implements ITestListener, ISuiteListener {
+public class CustomListener extends BasePage implements ITestListener, ISuiteListener {
 
     @Override
     public void onStart(ISuite suite) {
+        start();
         System.out.println("Suite Started ************************************************************************");
     }
 
@@ -33,7 +34,7 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
 
     @Override
     public void onTestStart(ITestResult result) {
-        start();
+        //start();
         System.out.println("Test Case started...................................................................");
         test = rep.startTest(result.getName());
 
@@ -49,7 +50,7 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
                 System.out.println("Skipping the test due to environment.......");
                 test.log(LogStatus.SKIP, "Environment not supported");
                 result.setStatus(ITestResult.SKIP);
-                throw new SkipException(" .................... ");
+                throw new SkipException("Test Case: " +result.getName()+" will run in Environment: "+env.value()+" and the current configuration is: "+environment);
             }
         }
 
@@ -59,7 +60,7 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
             System.out.println("Test Case name: " + name);
             System.out.println("Skipping the test case..........................................................");
 
-            throw new SkipException("................................................................");
+            throw new SkipException("Test case is disabled in the configuration "+result.getName());
         }
 
         configureDriver();
@@ -69,6 +70,7 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
     public void onTestSuccess(ITestResult result) {
         test.log(LogStatus.PASS, result.getName().toUpperCase() + " PASS");
         rep.endTest(test);
+        quit();
     }
 
     @Override
@@ -90,12 +92,14 @@ public class CustomListener extends Page implements ITestListener, ISuiteListene
         } finally {
             rep.endTest(test);
         }
+        quit();
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         test.log(LogStatus.SKIP, result.getName().toUpperCase() + " Skipped as the Run mode is NO");
         rep.endTest(test);
+        quit();
     }
 
     @Override

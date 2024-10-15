@@ -1,6 +1,6 @@
 package com.w2a.errorController;
 
-import com.w2a.base.Page;
+import com.w2a.base.BasePage;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AssertLib extends Page {
+public class AssertLib extends BasePage {
     private static Map<ITestResult, List<Throwable>> verificationFailuresMap
             = new HashMap<>();
 

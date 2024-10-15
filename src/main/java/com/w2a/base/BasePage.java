@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -26,27 +27,29 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Logger;
 
-public class Page {
+public class BasePage {
 
     public static WebDriver driver;
-    public static Properties config = new Properties();
-    public static Properties OR = new Properties();
+    protected static Properties config = new Properties();
+    protected static Properties OR = new Properties();
     public static FileInputStream fis;
     public static Logger log = Logger.getLogger("devpinoyLogger");
-    public static WebDriverWait wait;
+    protected static WebDriverWait wait;
+
     public static String browser;
     public static ExcelReader excelReader;
     public static ExtentReports rep = ExtentManager.getInstance();
     public static ExtentTest test;
     public static AjaxElementLocatorFactory factory;
+    public static Actions actions;
 
-    public Page() {
+    public BasePage() {
     }
 
     @BeforeTest
     public static void start() {
         initializeProperties();
-         initializeWebDriver(); // Download the WebDriver without launching the browser
+        initializeWebDriver(); // Download the WebDriver without launching the browser
     }
 
     private static void initializeProperties() {
@@ -104,7 +107,7 @@ public class Page {
 
     public static void configureDriver() {
         if (driver == null) {
-            synchronized (Page.class) {
+            synchronized (BasePage.class) {
                 if (driver == null) {
                     log.info("Initializing WebDriver...");
                     switch (browser.toLowerCase()) {
@@ -120,7 +123,9 @@ public class Page {
                             driver = new InternetExplorerDriver();
                             break;
                     }
-                    factory = new AjaxElementLocatorFactory(driver, 3);
+                    factory = new AjaxElementLocatorFactory(driver, 10);
+                    actions = new Actions(driver,Duration.ofSeconds(10));
+
                 }
             }
         }
@@ -129,7 +134,7 @@ public class Page {
         driver.get(config.getProperty("testsiteurl"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         log.info("Driver setup completed successfully.");
     }
 

@@ -1,23 +1,23 @@
 package com.w2a.pages;
 
-import com.w2a.base.Page;
+import com.w2a.base.BasePage;
+import com.w2a.errorController.ActionLib;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-public class HomePage extends Page {
+public class HomeBasePage extends BasePage {
 
     private HomePageLocators homePageLocators;
 
-    public HomePage(){
+    public HomeBasePage(){
         this.homePageLocators = new HomePageLocators();
         PageFactory.initElements(factory,homePageLocators);
-        PageFactory.initElements(driver,homePageLocators);
+
     }
 
     public void gotoLogin(){
-        //driver.findElement(By.xpath("//a[text()='Sign In']")).click();
-        homePageLocators.signIn.click();
+
+        ActionLib.click(homePageLocators.signIn, "");
 
     }
     public void login() {

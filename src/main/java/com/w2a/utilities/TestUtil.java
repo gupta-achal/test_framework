@@ -1,6 +1,6 @@
 package com.w2a.utilities;
 
-import com.w2a.base.Page;
+import com.w2a.base.BasePage;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,9 +12,9 @@ import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.Hashtable;
 
-public class TestUtil extends Page {
+public class TestUtil extends BasePage {
 
-    private static ExcelReader excelReader = Page.getExcel();
+    private static ExcelReader excelReader = BasePage.getExcel();
     public static String scrName;
 
     @DataProvider(name = "dp")
