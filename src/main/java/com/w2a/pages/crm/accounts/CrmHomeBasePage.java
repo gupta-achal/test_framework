@@ -1,9 +1,9 @@
 package com.w2a.pages.crm.accounts;
 
-import com.w2a.base.Page;
+import com.w2a.base.BasePage;
 import org.openqa.selenium.By;
 
-public class CrmHomePage extends Page {
+public class CrmHomeBasePage extends BasePage {
 
     public void gotoCrm(){
         driver.findElement(By.xpath("//*[@id=\"zl-category-1\"]/div/ul/li[1]/div/a/p")).click();

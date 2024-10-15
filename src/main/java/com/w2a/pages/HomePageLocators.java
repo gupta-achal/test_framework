@@ -1,10 +1,8 @@
 package com.w2a.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class HomePageLocators {
 
@@ -12,8 +10,12 @@ public class HomePageLocators {
             @FindBy(xpath = "//a[text()='Sign In']")
     )
     public WebElement signIn;
+    @FindAll({
+            @FindBy(xpath = "//input[@placeholder='Email address or mobile number']"),
+            @FindBy(css = "input[placeholder='Email address or mobile number']"),
+            @FindBy(id = " .. "),
+            @FindBy(linkText = "email address or mobile number")
+    })
+    public WebElement emailTextBox;
 
-//    public HomePageLocators(WebDriver driver){
-//        PageFactory.initElements(driver, this);
-//    }
 }

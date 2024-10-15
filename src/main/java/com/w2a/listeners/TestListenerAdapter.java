@@ -1,16 +1,13 @@
 package com.w2a.listeners;
 
-import com.relevantcodes.extentreports.LogStatus;
-import com.w2a.annotation.Environment;
-import com.w2a.base.Page;
+import com.w2a.base.BasePage;
 import com.w2a.errorController.AssertLib;
 import org.testng.*;
 import org.testng.internal.Utils;
 
-import java.lang.reflect.Method;
 import java.util.List;
 
-public class TestListenerAdapter extends Page implements IInvokedMethodListener {
+public class TestListenerAdapter extends BasePage implements IInvokedMethodListener {
 
     @Override
     public void beforeInvocation(IInvokedMethod iInvokedMethod, ITestResult result) {

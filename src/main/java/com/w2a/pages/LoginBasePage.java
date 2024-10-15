@@ -1,9 +1,9 @@
 package com.w2a.pages;
 
-import com.w2a.base.Page;
+import com.w2a.base.BasePage;
 import org.openqa.selenium.By;
 
-public class LoginPage extends Page {
+public class LoginBasePage extends BasePage {
 
 
     public void gotoLogin(){
