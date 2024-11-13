@@ -7,6 +7,7 @@ import com.w2a.utilities.ExcelReader;
 import com.w2a.utilities.ExtentManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -21,6 +23,8 @@ import org.testng.annotations.BeforeTest;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
@@ -42,6 +46,7 @@ public class BasePage {
     public static ExtentTest test;
     public static AjaxElementLocatorFactory factory;
     public static Actions actions;
+    public static Boolean runOnGrid;
 
     public BasePage() {
     }
@@ -78,10 +83,20 @@ public class BasePage {
         // Determine which browser to use
         browser = System.getenv("browser") != null && !System.getenv("browser").isEmpty() ?
                 System.getenv("browser") : config.getProperty("browser");
+        runOnGrid = Boolean.parseBoolean(config.getProperty("runOnGrid", "false")); // Set flag for Grid execution
         log.info("Browser set to: " + browser);
     }
 
     protected static void initializeWebDriver() {
+        log.info("Initializing the WebDriver.");
+        if (runOnGrid) {
+            setupRemoteDriver();
+        } else {
+            setupLocalDriver();
+        }
+    }
+
+    protected static void setupLocalDriver() {
         log.info("Setting up WebDriver manager...");
         switch (browser.toLowerCase()) {
             case "firefox":
@@ -105,6 +120,62 @@ public class BasePage {
         }
     }
 
+//    protected static void setupRemoteDriver()  {
+//        log.info("Setting up WebDriver for Selenium Grid...");
+//
+//
+////        DesiredCapabilities capabilities = new DesiredCapabilities();
+////        capabilities.setBrowserName(browser);
+////        capabilities.setPlatform(Platform.ANY);
+////
+////        // Add browser-specific capabilities
+////        if (browser.equalsIgnoreCase("chrome")) {
+////            ChromeOptions chromeOptions = new ChromeOptions();
+////            chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+////            capabilities.merge(chromeOptions);
+////        } else if (browser.equalsIgnoreCase("firefox")) {
+////            FirefoxOptions firefoxOptions = new FirefoxOptions();
+////            capabilities.merge(firefoxOptions);
+////        }
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");
+//        try {
+//            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+//        } catch (MalformedURLException e) {
+//            throw new RuntimeException(e);
+//        }
+//
+////        try {
+////            // Ensure you're using the correct Grid Hub URL
+////            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+////        } catch (MalformedURLException e) {
+////            log.severe("Grid Hub URL is incorrect: " + e.getMessage());
+////            throw new RuntimeException(e);
+////        }
+//    }
+
+    protected static void setupRemoteDriver() {
+        log.info("Setting up WebDriver for Selenium Grid...");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--disable-dev-shm-usage", "--no-sandbox", "--disable-gpu");
+
+        // Add preferences if needed
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+        options.setExperimentalOption("prefs", prefs);
+
+        try {
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+            log.info("Remote WebDriver setup completed.");
+        } catch (MalformedURLException e) {
+            log.severe("Grid Hub URL is incorrect: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+
     public static void configureDriver() {
         if (driver == null) {
             synchronized (BasePage.class) {
@@ -123,20 +194,21 @@ public class BasePage {
                             driver = new InternetExplorerDriver();
                             break;
                     }
-                    factory = new AjaxElementLocatorFactory(driver, 10);
-                    actions = new Actions(driver,Duration.ofSeconds(10));
-
                 }
             }
         }
 
+        factory = new AjaxElementLocatorFactory(driver, 15);
+        actions = new Actions(driver);
+
         log.info("Navigating to test site: " + config.getProperty("testsiteurl"));
         driver.get(config.getProperty("testsiteurl"));
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(runOnGrid ? 10 : 5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(runOnGrid ? 15 : 10));
         log.info("Driver setup completed successfully.");
     }
+
 
     private static WebDriver createChromeDriver() {
         ChromeOptions options = new ChromeOptions();
@@ -161,34 +233,23 @@ public class BasePage {
         return driver;
     }
 
-    public static void click(WebElement element) {
-        try {
-            element.click();
-            test.log(LogStatus.INFO, "Clicking on the element: " + element.getText());
-        } catch (ElementClickInterceptedException ex) {
-            ex.printStackTrace();
-        }
-        test.log(LogStatus.INFO, "Clicking on: " + element.getText());
-    }
 
-    public static void type(WebElement element, String message) {
-        try {
-            element.sendKeys(message);
-        } catch (ElementClickInterceptedException e) {
-            e.printStackTrace();
-        }
-        test.log(LogStatus.INFO, "Entering the text: " + message + " in the element: " + element.getText());
-    }
 
     @AfterTest
     public static void quit() {
         log.info("Closing the browser...");
         if (driver != null) {
-            driver.quit();
-            log.info("Browser closed.");
-            driver = null; // Reset driver to null to allow reinitialization
+            try {
+                driver.quit();
+                log.info("Browser closed.");
+            } catch (org.openqa.selenium.WebDriverException e) {
+                log.warning("Session already closed or invalid session ID: " + e.getMessage());
+            } finally {
+                driver = null; // Reset driver to null to allow reinitialization
+            }
         }
     }
+
 
     public static ExcelReader getExcel(String path) {
         excelReader = new ExcelReader(path);
