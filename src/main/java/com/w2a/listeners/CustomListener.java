@@ -13,7 +13,7 @@ public class CustomListener extends BasePage implements ITestListener, ISuiteLis
     @Override
     public void onStart(ISuite suite) {
         start();
-        System.out.println("Suite Started ************************************************************************");
+        System.out.println("Suite Started *********************************************");
     }
 
     @Override
@@ -64,7 +64,7 @@ public class CustomListener extends BasePage implements ITestListener, ISuiteLis
         }
 
         configureDriver();
-     }
+    }
 
     @Override
     public void onTestSuccess(ITestResult result) {

@@ -1,6 +1,7 @@
 package com.w2a.utilities;
 
 
+import com.w2a.base.BasePage;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.util.HSSFColor;
@@ -12,6 +13,7 @@ import org.apache.poi.xssf.usermodel.*;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Calendar;
 
 public class ExcelReader {
@@ -24,17 +26,30 @@ public class ExcelReader {
     private XSSFRow row   =null;
     private XSSFCell cell = null;
 
-    public ExcelReader(String path) {
+//    public ExcelReader(String path) {
+//
+//        this.path=path;
+//        try {
+//            fis = new FileInputStream(path);
+//            workbook = new XSSFWorkbook(fis);
+//            sheet = workbook.getSheetAt(0);
+//            fis.close();
+//        } catch (Exception e) {
+//
+//            e.printStackTrace();
+//        }
+//    }
+    public ExcelReader(String filePath){
 
-        this.path=path;
+        //fis = (FileInputStream) BasePage.class.getClassLoader().getResourceAsStream(file);
+        InputStream fis = ExcelReader.class.getClassLoader().getResourceAsStream(filePath);
+
         try {
-            fis = new FileInputStream(path);
             workbook = new XSSFWorkbook(fis);
             sheet = workbook.getSheetAt(0);
             fis.close();
-        } catch (Exception e) {
-
-            e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
     }

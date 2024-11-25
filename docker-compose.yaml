@@ -39,9 +39,13 @@ services:
       - SE_EVENT_BUS_HOST=hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_NODE_MAX_SESSIONS=4
       - SE_OPENTELEMETRY_ENDPOINT=http://otel-collector:4317  # Set OpenTelemetry endpoint
     networks:
       - selenium-network
+    deploy:
+      replicas: 4
 
   # Selenium Node for Firefox
   firefox:
@@ -56,6 +60,8 @@ services:
       - SE_OPENTELEMETRY_ENDPOINT=http://otel-collector:4317  # Set OpenTelemetry endpoint
     networks:
       - selenium-network
+    deploy:
+      replicas: 4
 
 networks:
   selenium-network:

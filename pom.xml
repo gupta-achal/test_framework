@@ -7,15 +7,18 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<maven.compiler.source>11</maven.compiler.source> <!-- Set your desired Java version -->
-		<maven.compiler.target>11</maven.compiler.target> <!-- Set your desired Java version -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<package.directory>${project.build.directory}/docker-resources</package.directory>
+		<target.directory>${project.build.directory}/docker-resources</target.directory>
+
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.11</version>
+			<version>7.10.2</version>
 		</dependency>
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
@@ -82,45 +85,108 @@
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>3.6</version>
 		</dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <version>4.16.1</version>
-        </dependency>
-    </dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>4.16.1</version>
+		</dependency>
+	</dependencies>
 
 	<build>
+		<finalName>selenium-docker</finalName>
 		<plugins>
+			<!-- To compile the source code using specific java version. also to force IDE to change the settings -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version> <!-- You can use a newer version if available -->
+				<version>3.11.0</version>
 				<configuration>
-					<source>${maven.compiler.source}</source>
-					<target>${maven.compiler.target}</target>
+					<release>17</release>
 				</configuration>
 			</plugin>
-
+			<!-- To run the tests using specific parameters, change thread count, testng report output directory etc -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18.1</version>
+				<version>3.2.3</version>
 				<configuration>
-					<testFailureIgnore>false</testFailureIgnore>
+					<!-- mvn clean test -Dbrowser=chrome -Dselenium.grid.enabled=true -->
+					<systemPropertyVariables>
+						<browser>chrome</browser>
+						<selenium.grid.enabled>true</selenium.grid.enabled>
+					</systemPropertyVariables>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/com/w2a/runner/testng.xml</suiteXmlFile>
+						<file>src/test/resources/com/w2a/runner/testng.xml</file>
+
 					</suiteXmlFiles>
+					<threadCount>4</threadCount>
+					<reportsDirectory>target/test-output</reportsDirectory>
 				</configuration>
 			</plugin>
-		</plugins>
+			<!-- To copy all the dependencies to run our tests as part of "mvn package" -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>3.6.0</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>
+								${package.directory}/libs
+							</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- To package our page objects, test classes into jar -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<outputDirectory>${package.directory}/libs</outputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+						<!--<configuration>
+							<includes>**/*.class</includes>
+						</configuration>-->
+					</execution>
+				</executions>
+			</plugin>
+			<!-- To copy resources into the output directory -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${package.directory}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/test/resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
-		<testResources>
-			<testResource>
-				<directory>src/test/resources/com/w2a/properties</directory>
-				<includes>
-					<include>log4j.properties</include>
-				</includes>
-			</testResource>
-		</testResources>
+
+		</plugins>
 	</build>
 </project>
