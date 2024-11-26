@@ -10,6 +10,7 @@ public class HomePageLocators {
             @FindBy(xpath = "//a[text()='Sign In']")
     )
     public WebElement signIn;
+
     @FindAll({
             @FindBy(xpath = "//input[@placeholder='Email address or mobile number']"),
             @FindBy(css = "input[placeholder='Email address or mobile number']"),

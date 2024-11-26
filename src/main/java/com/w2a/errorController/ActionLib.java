@@ -345,5 +345,4 @@ public class ActionLib extends BasePage {
             throw new RuntimeException("An error occurred while highlighting the element: " + element, e);
         }
     }
-
 }

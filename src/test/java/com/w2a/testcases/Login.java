@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 public class Login {
     @Test(priority = 1)
-
     public void login(){
         App app = new App();
         App.homePage.gotoLogin();
