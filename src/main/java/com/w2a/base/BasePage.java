@@ -307,22 +307,8 @@ public class BasePage {
     public static ExcelReader getExcel() {
         String filePath = "com/w2a/excel/testdata.xlsx";
         InputStream file = ExcelReader.class.getClassLoader().getResourceAsStream(filePath);
-//        excelReader = new ExcelReader(
-//                System.getProperty("user.dir") + "\\src\\test\\resources\\com\\w2a\\excel\\testdata.xlsx");
         excelReader = new ExcelReader(filePath);
         return excelReader;
     }
-
-//    public static ExcelReader getExcel() {
-//        String filePath = "com/w2a/excel/testdata.xlsx";
-//        InputStream file = ExcelReader.class.getClassLoader().getResourceAsStream(filePath);
-//
-//        if (file == null) {
-//            throw new RuntimeException("File not found at path: " + filePath);
-//        }
-//
-//        excelReader = new ExcelReader(file);
-//        return excelReader;
-//    }
 
 }
