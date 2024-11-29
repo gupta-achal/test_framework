@@ -24,8 +24,10 @@ import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
@@ -47,12 +49,16 @@ public class BasePage {
     public static AjaxElementLocatorFactory factory;
     public static Actions actions;
     public static Boolean runOnGrid;
+    public static String HOST = System.getProperty("selenium.grid.hubhost");
+    public static String HUB_URL = "http://" +HOST+":4444/wd/hub";
+    public static String systemIP;
 
     public BasePage() {
     }
 
     @BeforeTest
     public static void start() {
+
         initializeProperties();
         initializeWebDriver(); // Download the WebDriver without launching the browser
     }
@@ -86,10 +92,12 @@ public class BasePage {
         // Determine which browser to use
         browser = System.getenv("browser") != null && !System.getenv("browser").isEmpty() ?
                 System.getenv("browser") : config.getProperty("browser");
-        runOnGrid = Boolean.parseBoolean(config.getProperty("runOnGrid", "false")); // Set flag for Grid execution
+        //runOnGrid = Boolean.parseBoolean(config.getProperty("runOnGrid", "false")); // Set flag for Grid execution
         String gridEnabled = System.getProperty("selenium.grid.enabled");
         System.out.println("**********************................"+System.getProperty("selenium.grid.enabled"));
 
+
+        System.out.println(System.getProperty("selenium.grid.enabled"));
         runOnGrid = Boolean.parseBoolean(gridEnabled);
         System.out.println("**********************"+runOnGrid);
         if(runOnGrid){
@@ -181,7 +189,24 @@ public class BasePage {
 
     private static WebDriver initializeRemoteWebDriver(Capabilities options) {
         try {
-            return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+            log.info("Connecting to the HUB: "+HUB_URL);
+            try {
+                // Get the local host information
+                InetAddress localHost = InetAddress.getLocalHost();
+
+                // Get the system IP address
+                systemIP = localHost.getHostAddress();
+
+                System.out.println("System IP Address: " + systemIP);
+            } catch (UnknownHostException e) {
+                throw new RuntimeException(e);
+            }
+            systemIP = System.getProperty("selenium.grid.hubhost");
+            //HUB_URL = "http://"+systemIP+":4444/wd/hub";
+            log.info("Connecting to the HUB: "+HUB_URL);
+            log.info("Host........"+HOST);
+
+            return new RemoteWebDriver(new URL(HUB_URL), options);
         } catch (MalformedURLException e) {
             log.severe("Grid Hub URL is incorrect: " + e.getMessage());
             throw new RuntimeException(e);
@@ -282,22 +307,8 @@ public class BasePage {
     public static ExcelReader getExcel() {
         String filePath = "com/w2a/excel/testdata.xlsx";
         InputStream file = ExcelReader.class.getClassLoader().getResourceAsStream(filePath);
-//        excelReader = new ExcelReader(
-//                System.getProperty("user.dir") + "\\src\\test\\resources\\com\\w2a\\excel\\testdata.xlsx");
         excelReader = new ExcelReader(filePath);
         return excelReader;
     }
-
-//    public static ExcelReader getExcel() {
-//        String filePath = "com/w2a/excel/testdata.xlsx";
-//        InputStream file = ExcelReader.class.getClassLoader().getResourceAsStream(filePath);
-//
-//        if (file == null) {
-//            throw new RuntimeException("File not found at path: " + filePath);
-//        }
-//
-//        excelReader = new ExcelReader(file);
-//        return excelReader;
-//    }
 
 }

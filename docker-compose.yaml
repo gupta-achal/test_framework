@@ -1,67 +1,56 @@
 version: "3"
 services:
-  # OpenTelemetry Collector
-  otel-collector:
-    image: otel/opentelemetry-collector:latest
-    networks:
-      - selenium-network
-    ports:
-      - "4317:4317"   # Expose OpenTelemetry collector port 4317 for gRPC
-      - "55681:55681"  # Example port for OTLP gRPC receiver (optional)
-    environment:
-      - OTEL_RESOURCE_ATTRIBUTES=service.name=otel-collector
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
-    command:
-      - "--config=/otelcontribcol/config.yaml"  # Ensure correct config file path
-    volumes:
-      - ./otel-collector-config.yaml:/otelcontribcol/config.yaml  # Mount the actual config file
-    restart: always  # Optional, to ensure the service restarts if it fails
-
-  # Selenium Hub
+  # Selenium Hub (without OpenTelemetry)
   hub:
-    image: selenium/hub
+    image: selenium/hub:latest
     ports:
       - 4444:4444
     networks:
       - selenium-network
     environment:
-      - SE_OPENTELEMETRY_ENDPOINT=http://otel-collector:4317  # Set OpenTelemetry endpoint
-    depends_on:
-      - otel-collector
+      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
+      - HUB_HOST=hub
 
   # Selenium Node for Chrome
   chrome:
     image: selenium/node-chromium
     depends_on:
       - hub
-      - otel-collector
     environment:
       - SE_EVENT_BUS_HOST=hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
-      - SE_NODE_MAX_SESSIONS=4
-      - SE_OPENTELEMETRY_ENDPOINT=http://otel-collector:4317  # Set OpenTelemetry endpoint
+      - SE_NODE_MAX_SESSIONS=1
+      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
     networks:
       - selenium-network
-    deploy:
-      replicas: 4
 
   # Selenium Node for Firefox
   firefox:
     image: selenium/node-firefox
     depends_on:
       - hub
-      - otel-collector
     environment:
       - SE_EVENT_BUS_HOST=hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_OPENTELEMETRY_ENDPOINT=http://otel-collector:4317  # Set OpenTelemetry endpoint
+      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
     networks:
       - selenium-network
-    deploy:
-      replicas: 4
+
+  # Selenium Docker (Test Runner)
+  selenium-docker:
+    image: docker/selenium-docker
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
+      - TEST_SUITE=testng.xml
+      - HUB_HOST=hub
+    networks:
+      - selenium-network
 
 networks:
   selenium-network:

@@ -114,6 +114,7 @@
 					<systemPropertyVariables>
 						<browser>chrome</browser>
 						<selenium.grid.enabled>true</selenium.grid.enabled>
+						<selenium.grid.hubhost>192.168.1.6</selenium.grid.hubhost>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
 						<file>src/test/resources/com/w2a/runner/testng.xml</file>
