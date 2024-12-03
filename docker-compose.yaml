@@ -48,11 +48,14 @@ services:
       - HUB_HOST=hub
     networks:
       - selenium-network
-
   telemetry:
     image: otel/opentelemetry-collector
+    ports:
+      - 4317:4317
+
+
   jenkins:
-    image: jenkins/jenkins:lts
+    image: jenkins/jenkins:lts-windows
     user: root
     ports:
       - 8092:8080

@@ -1,0 +1,9 @@
+Started by user [8mha:////4K1kUtvRNGl/OsXH+6XfGkh19cxaNXrhbytC2sxAQyJdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4DIIqgyMOkQQ+NInFgLqluW8GCfNux/c5wz2XQt31NexAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/fLMvJT88mIALPIANMYAAAA=[0mwindows in workspace C:\Users\Achal.Gupta\Documents\testing\testing-master\volumes\nodes\workspace\docker_test
+[docker_test] $ cmd /c call C:\Users\ACHAL~1.GUP\AppData\Local\Temp\jenkins17358237429224274081.bat
+
+C:\Users\Achal.Gupta\Documents\testing\testing-master\volumes\nodes\workspace\docker_test>cd ../ 
+
+C:\Users\Achal.Gupta\Documents\testing\testing-master\volumes\nodes\workspace>exit 0 
+Finished: SUCCESS
