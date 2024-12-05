@@ -8,8 +8,8 @@ services:
     networks:
       - selenium-network
     environment:
-      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
       - HUB_HOST=hub
+
 
   # Selenium Node for Chrome
   chrome:
@@ -22,7 +22,6 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_OVERRIDE_MAX_SESSIONS=true
       - SE_NODE_MAX_SESSIONS=1
-      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
     networks:
       - selenium-network
 
@@ -35,7 +34,6 @@ services:
       - SE_EVENT_BUS_HOST=hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
     networks:
       - selenium-network
 
@@ -46,11 +44,26 @@ services:
       - chrome
       - firefox
     environment:
-      - SE_OPENTELEMETRY_ENABLED=false  # Disable OpenTelemetry
       - TEST_SUITE=testng.xml
       - HUB_HOST=hub
     networks:
       - selenium-network
+  telemetry:
+    image: otel/opentelemetry-collector
+    ports:
+      - 4317:4317
+
+
+  jenkins:
+    image: jenkins/jenkins:lts-windows
+    user: root
+    ports:
+      - 8092:8080
+      - 50000:50000
+    volumes:
+      - ./volumes/master:/var/jenkins_home
+
+
 
 networks:
   selenium-network:
