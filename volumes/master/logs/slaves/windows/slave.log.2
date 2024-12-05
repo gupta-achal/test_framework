@@ -1,0 +1,81 @@
+Inbound agent connected from 172.19.0.1
+Remoting version: 3261.v9c670a_4748a_9
+Launcher: JNLPLauncher
+Communication Protocol: WebSocket
+This is a Windows agent
+Agent successfully connected and online
+ERROR: Failed to monitor for Architecture
+ERROR: Failed to monitor for Free Temp Space
+ERROR: Failed to monitor for Clock Difference
+java.util.concurrent.TimeoutException
+	at hudson.remoting.Request$1.get(Request.java:333)
+	at hudson.remoting.Request$1.get(Request.java:250)
+	at hudson.remoting.FutureAdapter.get(FutureAdapter.java:66)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitorDetailed(AbstractAsyncNodeMonitorDescriptor.java:112)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitor(AbstractAsyncNodeMonitorDescriptor.java:76)
+	at hudson.node_monitors.AbstractNodeMonitorDescriptor$Record.run(AbstractNodeMonitorDescriptor.java:324)
+java.util.concurrent.TimeoutException
+	at hudson.remoting.Request$1.get(Request.java:333)
+	at hudson.remoting.Request$1.get(Request.java:250)
+	at hudson.remoting.FutureAdapter.get(FutureAdapter.java:66)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitorDetailed(AbstractAsyncNodeMonitorDescriptor.java:112)
+	at hudson.node_monitors.DiskSpaceMonitorDescriptor.monitor(DiskSpaceMonitorDescriptor.java:59)
+	at hudson.node_monitors.AbstractNodeMonitorDescriptor$Record.run(AbstractNodeMonitorDescriptor.java:324)
+ERROR: Failed to monitor for Response Time
+Connection terminated
+ERROR: Failed to monitor for Free Disk Space
+ERROR: Failed to monitor for Free Swap Space
+ERROR: Connection terminated
+java.util.concurrent.TimeoutException
+	at hudson.remoting.Request$1.get(Request.java:333)
+	at hudson.remoting.Request$1.get(Request.java:250)
+	at hudson.remoting.FutureAdapter.get(FutureAdapter.java:66)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitorDetailed(AbstractAsyncNodeMonitorDescriptor.java:112)
+	at hudson.node_monitors.DiskSpaceMonitorDescriptor.monitor(DiskSpaceMonitorDescriptor.java:59)
+	at hudson.node_monitors.AbstractNodeMonitorDescriptor$Record.run(AbstractNodeMonitorDescriptor.java:324)
+java.util.concurrent.TimeoutException
+	at hudson.remoting.Request$1.get(Request.java:333)
+	at hudson.remoting.Request$1.get(Request.java:250)
+	at hudson.remoting.FutureAdapter.get(FutureAdapter.java:66)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitorDetailed(AbstractAsyncNodeMonitorDescriptor.java:112)
+	at hudson.node_monitors.ResponseTimeMonitor$DescriptorImpl.monitor(ResponseTimeMonitor.java:72)
+	at hudson.node_monitors.AbstractNodeMonitorDescriptor$Record.run(AbstractNodeMonitorDescriptor.java:324)
+java.nio.channels.ClosedChannelException
+	at jenkins.agents.WebSocketAgents$Session.closed(WebSocketAgents.java:160)
+	at jenkins.websocket.WebSockets$2.onWebSocketClose(WebSockets.java:105)
+	at jenkins.websocket.Jetty12EE9Provider$2.onWebSocketClose(Jetty12EE9Provider.java:164)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.ee9.websocket.common.JettyWebSocketFrameHandler.notifyOnClose(JettyWebSocketFrameHandler.java:306)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.ee9.websocket.common.JettyWebSocketFrameHandler.onCloseFrame(JettyWebSocketFrameHandler.java:265)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.ee9.websocket.common.JettyWebSocketFrameHandler.onFrame(JettyWebSocketFrameHandler.java:228)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.websocket.core.WebSocketCoreSession$IncomingAdaptor.onFrame(WebSocketCoreSession.java:680)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.websocket.core.ExtensionStack.onFrame(ExtensionStack.java:113)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.websocket.core.WebSocketCoreSession.onFrame(WebSocketCoreSession.java:463)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.websocket.core.WebSocketConnection.onFrame(WebSocketConnection.java:254)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.websocket.core.WebSocketConnection.fillAndParse(WebSocketConnection.java:447)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.websocket.core.WebSocketConnection.onFillable(WebSocketConnection.java:332)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:322)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:99)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:478)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:441)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:293)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:201)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:311)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:979)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1209)
+	at Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1164)
+	at java.base/java.lang.Thread.run(Unknown Source)
+java.util.concurrent.TimeoutException
+	at hudson.remoting.Request$1.get(Request.java:333)
+	at hudson.remoting.Request$1.get(Request.java:250)
+	at hudson.remoting.FutureAdapter.get(FutureAdapter.java:66)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitorDetailed(AbstractAsyncNodeMonitorDescriptor.java:112)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitor(AbstractAsyncNodeMonitorDescriptor.java:76)
+	at hudson.node_monitors.AbstractNodeMonitorDescriptor$Record.run(AbstractNodeMonitorDescriptor.java:324)
+java.util.concurrent.TimeoutException
+	at hudson.remoting.Request$1.get(Request.java:333)
+	at hudson.remoting.Request$1.get(Request.java:250)
+	at hudson.remoting.FutureAdapter.get(FutureAdapter.java:66)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitorDetailed(AbstractAsyncNodeMonitorDescriptor.java:112)
+	at hudson.node_monitors.AbstractAsyncNodeMonitorDescriptor.monitor(AbstractAsyncNodeMonitorDescriptor.java:76)
+	at hudson.node_monitors.AbstractNodeMonitorDescriptor$Record.run(AbstractNodeMonitorDescriptor.java:324)

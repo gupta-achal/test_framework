@@ -1106,3 +1106,236 @@ java.lang.UnsatisfiedLinkError: Native Library C:\Users\Achal.Gupta\Documents\te
 	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:140)
 	at java.base/java.lang.Thread.run(Thread.java:842)
 
+Dec 03, 2024 4:39:36 PM io.jenkins.remoting.shaded.org.glassfish.tyrus.container.jdk.client.ClientFilter processError
+SEVERE: Connection error has occurred
+java.io.IOException: The I/O operation has been aborted because of either a thread exit or an application request
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 03, 2024 4:39:36 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 03, 2024 4:39:36 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 03, 2024 4:39:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 03, 2024 4:39:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 03, 2024 4:39:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 03, 2024 4:39:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 03, 2024 6:56:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 03, 2024 6:56:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 03, 2024 7:24:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 03, 2024 7:24:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 03, 2024 7:24:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 03, 2024 7:24:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 04, 2024 8:42:18 AM io.jenkins.remoting.shaded.org.glassfish.tyrus.container.jdk.client.ClientFilter processError
+SEVERE: Connection error has occurred
+java.io.IOException: The I/O operation has been aborted because of either a thread exit or an application request
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 04, 2024 8:42:18 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 04, 2024 8:42:18 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 04, 2024 8:42:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 04, 2024 8:42:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 04, 2024 8:42:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 04, 2024 8:42:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 04, 2024 11:34:25 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 04, 2024 11:34:25 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 04, 2024 11:34:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 04, 2024 11:34:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 04, 2024 11:34:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 04, 2024 11:34:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 04, 2024 3:41:21 PM io.jenkins.remoting.shaded.org.glassfish.tyrus.container.jdk.client.ClientFilter processError
+SEVERE: Connection error has occurred
+java.io.IOException: The I/O operation has been aborted because of either a thread exit or an application request
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 04, 2024 3:41:21 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 04, 2024 3:41:21 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 04, 2024 3:41:31 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 04, 2024 3:41:31 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 04, 2024 3:41:31 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 04, 2024 3:41:31 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 04, 2024 6:14:49 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 04, 2024 6:14:49 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 04, 2024 6:15:00 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 04, 2024 6:15:00 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 04, 2024 6:15:00 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 04, 2024 6:15:00 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 04, 2024 6:47:51 PM io.jenkins.remoting.shaded.org.glassfish.tyrus.container.jdk.client.ClientFilter processError
+SEVERE: Connection error has occurred
+java.io.IOException: The I/O operation has been aborted because of either a thread exit or an application request
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 04, 2024 6:47:51 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 04, 2024 6:47:51 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 04, 2024 6:48:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 04, 2024 6:48:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 04, 2024 6:48:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 04, 2024 6:48:01 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 04, 2024 8:01:27 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 04, 2024 8:01:27 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 04, 2024 8:01:37 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 04, 2024 8:01:37 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 04, 2024 8:01:37 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 04, 2024 8:01:37 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 04, 2024 10:01:02 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 04, 2024 10:01:02 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 04, 2024 10:28:33 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 04, 2024 10:28:33 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 04, 2024 10:28:33 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 04, 2024 10:28:33 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 1:01:27 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 1:01:27 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 3:01:04 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 3:01:04 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 3:01:04 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 3:01:04 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 4:01:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 4:01:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 4:01:38 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 4:01:38 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 4:01:38 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 4:01:38 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 5:01:29 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 5:01:29 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 5:01:40 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 5:01:40 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 5:01:40 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 5:01:40 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 6:01:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 6:01:28 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 6:01:28 AM hudson.remoting.Request$2 run
+INFO: Failed to send back a reply to the request UserRequest:jenkins.slaves.restarter.JnlpSlaveRestarterInstaller$FindEffectiveRestarters@1b4a6ae9: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@6d06ff8:windows": channel is already closed
+Dec 05, 2024 8:01:29 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 8:01:29 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 8:01:29 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 8:01:29 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 9:01:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: Write side closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 9:01:35 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Request$2 run
+INFO: Failed to send back a reply to the request UserRequest:hudson.node_monitors.ArchitectureMonitor$GetArchTask@5ed28bde: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@35306e66:windows": channel is already closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Request$2 run
+INFO: Failed to send back a reply to the request UserRequest:hudson.FilePath$CallableWith@64a73ed3: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@35306e66:windows": channel is already closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Request$2 run
+INFO: Failed to send back a reply to the request UserRequest:hudson.node_monitors.SwapSpaceMonitor$MonitorTask@61bfca9e: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@35306e66:windows": channel is already closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Request$2 run
+INFO: Failed to send back a reply to the request UserRequest:hudson.node_monitors.ResponseTimeMonitor$Step1@52ae7df6: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@35306e66:windows": channel is already closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Request$2 run
+INFO: Failed to send back a reply to the request UserRequest:hudson.FilePath$CallableWith@1179461a: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@35306e66:windows": channel is already closed
+Dec 05, 2024 9:01:35 AM hudson.remoting.Request$2 run
+INFO: Failed to send back a reply to the request UserRequest:hudson.model.Slave$GetClockDifference1@58bed259: hudson.remoting.ChannelClosedException: Channel "hudson.remoting.Channel@35306e66:windows": channel is already closed
+Dec 05, 2024 9:02:23 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 9:02:23 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 9:02:23 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 9:02:23 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 9:39:34 AM io.jenkins.remoting.shaded.org.glassfish.tyrus.container.jdk.client.ClientFilter processError
+SEVERE: Connection error has occurred
+java.io.IOException: The I/O operation has been aborted because of either a thread exit or an application request
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 05, 2024 9:39:34 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 9:39:34 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 9:39:44 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 9:39:44 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 9:39:44 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 9:39:44 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
