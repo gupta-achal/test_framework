@@ -1339,3 +1339,128 @@ Dec 05, 2024 9:39:44 AM hudson.remoting.Launcher$CuiListener status
 INFO: WebSocket connection open
 Dec 05, 2024 9:39:44 AM hudson.remoting.Launcher$CuiListener status
 INFO: Connected
+Dec 05, 2024 4:38:55 PM io.jenkins.remoting.shaded.org.glassfish.tyrus.container.jdk.client.ClientFilter processError
+SEVERE: Connection error has occurred
+java.io.IOException: The I/O operation has been aborted because of either a thread exit or an application request
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 05, 2024 4:38:56 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 4:38:56 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 4:39:06 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 4:39:06 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 4:39:06 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 4:39:06 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 4:49:11 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 4:49:11 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 5:03:29 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 5:03:29 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 5:03:29 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 5:03:29 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 5:41:20 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 5:41:20 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 6:41:45 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 6:41:45 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 6:41:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 6:41:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 8:24:44 PM org.jvnet.winp.Native loadByUrl
+INFO: Failed to load DLL from static location, falling back to temp file
+java.lang.UnsatisfiedLinkError: Native Library C:\Users\Achal.Gupta\Documents\testing\testing-master\volumes\nodes\remoting\jarCache\3A\winp.x64.BFFE30B3B50581290B1866EF8D48C609.dll already loaded in another classloader
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:201)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:174)
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2394)
+	at java.base/java.lang.Runtime.load0(Runtime.java:755)
+	at java.base/java.lang.System.load(System.java:1957)
+	at Jenkins v2.479.2//org.jvnet.winp.Native.loadDll(Native.java:253)
+	at Jenkins v2.479.2//org.jvnet.winp.Native.loadByUrl(Native.java:173)
+	at Jenkins v2.479.2//org.jvnet.winp.Native.load(Native.java:135)
+	at Jenkins v2.479.2//org.jvnet.winp.Native.<clinit>(Native.java:102)
+	at Jenkins v2.479.2//org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:230)
+	at Jenkins v2.479.2//hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:725)
+	at Jenkins v2.479.2//hudson.util.ProcessTree.get(ProcessTree.java:462)
+	at Jenkins v2.479.2//hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1165)
+	at Jenkins v2.479.2//hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1155)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:225)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:50)
+	at hudson.remoting.Request$2.run(Request.java:391)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:81)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:140)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 05, 2024 10:41:59 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 10:41:59 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 05, 2024 10:42:09 PM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 05, 2024 10:42:09 PM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 05, 2024 10:42:09 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 05, 2024 10:42:09 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 05, 2024 11:28:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 05, 2024 11:28:46 PM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 06, 2024 12:12:39 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 06, 2024 12:12:39 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 06, 2024 12:12:39 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 06, 2024 12:12:39 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 06, 2024 8:42:45 AM io.jenkins.remoting.shaded.org.glassfish.tyrus.container.jdk.client.ClientFilter processError
+SEVERE: Connection error has occurred
+java.io.IOException: The I/O operation has been aborted because of either a thread exit or an application request
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+Dec 06, 2024 8:42:45 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 06, 2024 8:42:45 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 06, 2024 8:42:55 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 06, 2024 8:42:55 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 06, 2024 8:42:55 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 06, 2024 8:42:55 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Dec 06, 2024 9:46:58 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Dec 06, 2024 9:46:58 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Dec 06, 2024 9:47:09 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Dec 06, 2024 9:47:09 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Dec 06, 2024 9:47:09 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Dec 06, 2024 9:47:09 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
