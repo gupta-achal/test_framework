@@ -17,18 +17,12 @@
     agent any
 
     stages {
-        stage(&apos;Stage 1&apos;) {
+        stage(&apos;Build Jar&apos;) {
             steps {
-                script {
-                    echo &apos;Running inside a Docker container&apos;
-                }
+                // sh &quot;mvn clean package -DskipTests&quot; // For Unix-based systems
+                bat &quot;mvn clean package -DskipTests&quot; // Use this for Windows
+                
             }
-        }
-    }
-
-    post {
-        always {
-            echo &apos;Pipeline completed&apos;
         }
     }
 }
