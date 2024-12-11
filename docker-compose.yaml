@@ -10,7 +10,6 @@ services:
     environment:
       - HUB_HOST=hub
 
-
   # Selenium Node for Chrome
   chrome:
     image: selenium/node-chromium
@@ -39,7 +38,7 @@ services:
 
   # Selenium Docker (Test Runner)
   selenium-docker:
-    image: docker/selenium-docker
+    image: guptachal/selenium-docker:latest
     depends_on:
       - chrome
       - firefox
@@ -48,22 +47,23 @@ services:
       - HUB_HOST=hub
     networks:
       - selenium-network
-  telemetry:
-    image: otel/opentelemetry-collector
-    ports:
-      - 4317:4317
 
-
+  # Jenkins with Maven installed
   jenkins:
-    image: jenkins/jenkins:lts-windows
+    build:
+      context: .
+      dockerfile: Dockerfile.jenkins  # Specify custom Jenkins Dockerfile
+    image: custom-jenkins-with-maven
+    container_name: jenkins
     user: root
     ports:
       - 8092:8080
       - 50000:50000
     volumes:
       - ./volumes/master:/var/jenkins_home
-
-
+      - /var/run/docker.sock:/var/run/docker.sock  # Allow Jenkins to run Docker commands
+    networks:
+      - selenium-network
 
 networks:
   selenium-network:
