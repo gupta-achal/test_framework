@@ -5,5 +5,8 @@
     <mapping directory="$PROJECT_DIR$/volumes/master/caches/git-9a8b068924276b23dd4a481166a6d415" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/volumes/master/workspace/Selenium_docker_github" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/volumes/master/workspace/Selenium_docker_github@2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/volumes/master/workspace/Selenium_docker_github_ws-cleanup_1733993319133" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/volumes/master/workspace/Selenium_docker_github_ws-cleanup_1734514273270" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/volumes/master/workspace/Selenium_docker_github_ws-cleanup_1734515742351" vcs="Git" />
   </component>
 </project>

@@ -1,0 +1,8 @@
+Started at Thu Dec 19 12:05:53 UTC 2024
+Checking docker_test
+Deleting /var/jenkins_home/workspace/docker_test on Jenkins
+Checking pipeline_demo
+Deleting /var/jenkins_home/workspace/pipeline_demo on Jenkins
+Checking Selenium_docker_github
+Deleting /var/jenkins_home/workspace/Selenium_docker_github on Jenkins
+Finished at Thu Dec 19 12:05:53 UTC 2024. 443ms

@@ -8,7 +8,6 @@ public class LoginBasePage extends BasePage {
 
     public void gotoLogin(){
         driver.findElement(By.xpath("//a[text()='Sign In']")).click();
-
     }
 
     public void login() {

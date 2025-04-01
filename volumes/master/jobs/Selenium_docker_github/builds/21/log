@@ -1,0 +1,267 @@
+Started by user [8mha:////4K1kUtvRNGl/OsXH+6XfGkh19cxaNXrhbytC2sxAQyJdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Replayed [8mha:////4O+2sNsctubRDo6mv5jCvJBau0xo3k2syMzsrxa6R9XaAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ5/az8JP3gVKDJmaW58Sn5ydmpRfHpmSUZpUn6Rgb6ANtIWfLUAAAA[0m#20
+[8mha:////4PkHuKP5pbpWwrBIYHveshOUDay/dOyPdGhr87JHS6rvAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Bouxeju39ymdWKlNqJAbKDviPy86UHvQQ4JJnqeQU4DAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4Gb3vwt4Hx4aa5kW/dOG9f0a/eXkoWRR2UmRcFlSc3mgAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/Selenium_docker_github
+[8mha:////4KgWQbc2d6NJseolLRaS+YwvSvKCMa1yyBOhoHSww0nMAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4JiAMSoN9BrCY9GaGlfqBP06QhzWvGH7OFsj62HxrAbAAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4CEpz8CZRl7cVrKtaHwvXTofyuTBsO44rF/7OEfFC4fLAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4In+bw0eHSqJT5p3c6gL0eUTFj4nYFvO8kI4umVMqWSUAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/guptachal/test_framework
+ > git init /var/jenkins_home/workspace/Selenium_docker_github # timeout=10
+Fetching upstream changes from https://github.com/guptachal/test_framework
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/guptachal/test_framework +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/guptachal/test_framework # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d21c5724d68fc35b0485050f6955c3311c444c4b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d21c5724d68fc35b0485050f6955c3311c444c4b # timeout=10
+Commit message: "Merge pull request #11 from guptachal/Achal"
+ > git rev-list --no-walk d21c5724d68fc35b0485050f6955c3311c444c4b # timeout=10
+[8mha:////4GrdZeI7uorUQ0FKOFnO3HS/tYChTG6kiifqkuEBwqSHAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4OFonHaQuEIsMRuvpA90UpcpJfkZeF2Eu/NIOlBNg5kTAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4ETM9PDzKd0SPBGA3Yp91/3LYEAwig7OEfhylmvbnoJLAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4N8xCA9qBjS7VMVXsQDU0DTlHUgNi76J7ti77wySyFRzAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4F0aRZz767RfL3X9H3FtEEB2lp7+AWWPvutyQxQErrXgAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withEnv
+[8mha:////4Aj+P7b4hVDHA7JP1L2rCYLlXCjd/2of+zJ1fdvdf7yyAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4BLrrTjMe6gpm4cocFXHhd8BD35f1cB/esV6M2bNfsJyAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] stage
+[8mha:////4GKPtQ8GxJjcmk1lRFEbpQwUnSo08Lef0a0P4dePF05GAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (Checkout Code)
+[8mha:////4CAVEoRosKJHZelGK74lefcF81hGyGjNM7usM/9JhX22AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] echo
+Checking out the code from the repository.
+[8mha:////4KuaUme3LFeQ9o5GPHYzqqXFzImPDqI+jLm3ZWvGWFHdAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHz0lO8vgAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Selenium_docker_github/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/guptachal/test_framework # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+Fetching upstream changes from https://github.com/guptachal/test_framework
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/guptachal/test_framework +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d21c5724d68fc35b0485050f6955c3311c444c4b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d21c5724d68fc35b0485050f6955c3311c444c4b # timeout=10
+Commit message: "Merge pull request #11 from guptachal/Achal"
+[8mha:////4MNGxDISLSiXlh4qxZOqFgHpHMqwQOls1QQN2iR5Pjc0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCiQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g1b0dOKvgAAAA==[0m[Pipeline] }
+[8mha:////4MI+z2+56/UdBwkC9vtTUwAjddJPQ3DddY/55cBVUvW3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJBqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQFoMog2vgAAAA==[0m[Pipeline] // stage
+[8mha:////4LwaJdE+Zr1wGChavSHlvDNWuLZ3LgTL9oZzrMeRSZswAAAApx+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycoiUnxF1Yo26cILQhJA0eq8kKenEibgadyBQiQkPlm3J+p4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrNzgO5r/CAAAA[0m[Pipeline] stage
+[8mha:////4BbycMUsoPtURH3qwUHE5EUY+BynxKZTQt/zGXejkeHhAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] { (Jar the Project)
+[8mha:////4BAnQnaqnUUsvb7UPVDzV/5ajoHbowOs35rW8sxPO82YAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bH7uiub4AAAA=[0m[Pipeline] echo
+Packaging the project into a JAR file.
+[8mha:////4IeS4YBC9C+rY8oClH3IZIhdWiK4glOLKc63O1USoOVVAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDudt+ah/eXoq5oL4AAAA=[0m[Pipeline] sh
++ mvn clean package -DskipTests
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.w2a:PageObjectModelBasics[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding PageObjectModelBasics 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;33mWARNING[m] The POM for org.testng:testng:jar:5.14.3 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[[1;33mWARNING[m] The POM for com.beust:jcommander:jar:1.66 is missing, no dependency information available
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/jenkins_home/workspace/Selenium_docker_github/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/Selenium_docker_github/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :source
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 17 source files with javac [debug release 17] to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 11 resources from src/test/resources to target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :dependency
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 3 source files with javac [debug release 17] to target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.2.3:test[m [1m(default-test)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:3.6.0:copy-dependencies[m [1m(copy-dependencies)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;34mINFO[m] Copying testng-7.10.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/testng-7.10.2.jar
+[[1;34mINFO[m] Copying slf4j-api-1.7.36.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/slf4j-api-1.7.36.jar
+[[1;34mINFO[m] Copying jcommander-1.82.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jcommander-1.82.jar
+[[1;34mINFO[m] Copying jquery-3.7.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jquery-3.7.1.jar
+[[1;34mINFO[m] Copying webdrivermanager-5.9.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/webdrivermanager-5.9.2.jar
+[[1;34mINFO[m] Copying gson-2.11.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/gson-2.11.0.jar
+[[1;34mINFO[m] Copying error_prone_annotations-2.27.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/error_prone_annotations-2.27.0.jar
+[[1;34mINFO[m] Copying docker-java-3.4.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/docker-java-3.4.0.jar
+[[1;34mINFO[m] Copying docker-java-core-3.4.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/docker-java-core-3.4.0.jar
+[[1;34mINFO[m] Copying docker-java-api-3.4.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/docker-java-api-3.4.0.jar
+[[1;34mINFO[m] Copying jackson-annotations-2.10.3.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jackson-annotations-2.10.3.jar
+[[1;34mINFO[m] Copying jackson-databind-2.10.3.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jackson-databind-2.10.3.jar
+[[1;34mINFO[m] Copying jackson-core-2.10.3.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jackson-core-2.10.3.jar
+[[1;34mINFO[m] Copying jcl-over-slf4j-1.7.30.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jcl-over-slf4j-1.7.30.jar
+[[1;34mINFO[m] Copying docker-java-transport-httpclient5-3.4.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/docker-java-transport-httpclient5-3.4.0.jar
+[[1;34mINFO[m] Copying docker-java-transport-3.4.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/docker-java-transport-3.4.0.jar
+[[1;34mINFO[m] Copying jna-5.13.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jna-5.13.0.jar
+[[1;34mINFO[m] Copying dec-0.1.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/dec-0.1.2.jar
+[[1;34mINFO[m] Copying commons-lang3-3.15.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/commons-lang3-3.15.0.jar
+[[1;34mINFO[m] Copying commons-compress-1.26.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/commons-compress-1.26.2.jar
+[[1;34mINFO[m] Copying commons-codec-1.17.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/commons-codec-1.17.0.jar
+[[1;34mINFO[m] Copying commons-io-2.16.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/commons-io-2.16.1.jar
+[[1;34mINFO[m] Copying httpclient5-5.2.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/httpclient5-5.2.1.jar
+[[1;34mINFO[m] Copying httpcore5-5.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/httpcore5-5.2.jar
+[[1;34mINFO[m] Copying httpcore5-h2-5.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/httpcore5-h2-5.2.jar
+[[1;34mINFO[m] Copying selenium-java-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-java-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-api-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-api-4.24.0.jar
+[[1;34mINFO[m] Copying jspecify-1.0.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jspecify-1.0.0.jar
+[[1;34mINFO[m] Copying selenium-chrome-driver-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-chrome-driver-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-chromium-driver-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-chromium-driver-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-manager-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-manager-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-devtools-v126-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-devtools-v126-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-devtools-v127-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-devtools-v127-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-devtools-v128-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-devtools-v128-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-devtools-v85-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-devtools-v85-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-edge-driver-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-edge-driver-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-firefox-driver-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-firefox-driver-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-http-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-http-4.24.0.jar
+[[1;34mINFO[m] Copying failsafe-3.3.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/failsafe-3.3.2.jar
+[[1;34mINFO[m] Copying selenium-ie-driver-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-ie-driver-4.24.0.jar
+[[1;34mINFO[m] Copying selenium-remote-driver-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-remote-driver-4.24.0.jar
+[[1;34mINFO[m] Copying opentelemetry-semconv-1.25.0-alpha.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-semconv-1.25.0-alpha.jar
+[[1;34mINFO[m] Copying opentelemetry-api-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-api-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-context-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-context-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-exporter-logging-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-exporter-logging-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-sdk-common-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-sdk-common-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-sdk-extension-autoconfigure-spi-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-sdk-extension-autoconfigure-spi-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-sdk-extension-autoconfigure-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-sdk-extension-autoconfigure-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-api-incubator-1.41.0-alpha.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-api-incubator-1.41.0-alpha.jar
+[[1;34mINFO[m] Copying opentelemetry-sdk-trace-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-sdk-trace-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-sdk-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-sdk-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-sdk-metrics-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-sdk-metrics-1.41.0.jar
+[[1;34mINFO[m] Copying opentelemetry-sdk-logs-1.41.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/opentelemetry-sdk-logs-1.41.0.jar
+[[1;34mINFO[m] Copying selenium-os-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-os-4.24.0.jar
+[[1;34mINFO[m] Copying commons-exec-1.4.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/commons-exec-1.4.0.jar
+[[1;34mINFO[m] Copying selenium-safari-driver-4.24.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-safari-driver-4.24.0.jar
+[[1;34mINFO[m] Copying extentreports-2.41.2.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/extentreports-2.41.2.jar
+[[1;34mINFO[m] Copying jsoup-1.8.3.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/jsoup-1.8.3.jar
+[[1;34mINFO[m] Copying sqlite-jdbc-3.8.11.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/sqlite-jdbc-3.8.11.1.jar
+[[1;34mINFO[m] Copying freemarker-2.3.23.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/freemarker-2.3.23.jar
+[[1;34mINFO[m] Copying mongodb-driver-3.0.4.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/mongodb-driver-3.0.4.jar
+[[1;34mINFO[m] Copying bson-3.0.4.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/bson-3.0.4.jar
+[[1;34mINFO[m] Copying mongodb-driver-core-3.0.4.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/mongodb-driver-core-3.0.4.jar
+[[1;34mINFO[m] Copying reportng-1.1.4.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/reportng-1.1.4.jar
+[[1;34mINFO[m] Copying velocity-1.4.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/velocity-1.4.jar
+[[1;34mINFO[m] Copying velocity-dep-1.4.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/velocity-dep-1.4.jar
+[[1;34mINFO[m] Copying guice-4.1.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/guice-4.1.0.jar
+[[1;34mINFO[m] Copying javax.inject-1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/javax.inject-1.jar
+[[1;34mINFO[m] Copying aopalliance-1.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/aopalliance-1.0.jar
+[[1;34mINFO[m] Copying guava-19.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/guava-19.0.jar
+[[1;34mINFO[m] Copying log4j-1.2.17.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/log4j-1.2.17.jar
+[[1;34mINFO[m] Copying mail-1.4.7.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/mail-1.4.7.jar
+[[1;34mINFO[m] Copying activation-1.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/activation-1.1.jar
+[[1;34mINFO[m] Copying mysql-connector-java-6.0.5.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/mysql-connector-java-6.0.5.jar
+[[1;34mINFO[m] Copying poi-3.6.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/poi-3.6.jar
+[[1;34mINFO[m] Copying commons-logging-1.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/commons-logging-1.1.jar
+[[1;34mINFO[m] Copying logkit-1.0.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/logkit-1.0.1.jar
+[[1;34mINFO[m] Copying avalon-framework-4.1.3.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/avalon-framework-4.1.3.jar
+[[1;34mINFO[m] Copying servlet-api-2.3.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/servlet-api-2.3.jar
+[[1;34mINFO[m] Copying poi-ooxml-3.6.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/poi-ooxml-3.6.jar
+[[1;34mINFO[m] Copying dom4j-1.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/dom4j-1.1.jar
+[[1;34mINFO[m] Copying xmlbeans-2.3.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/xmlbeans-2.3.0.jar
+[[1;34mINFO[m] Copying stax-api-1.0.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/stax-api-1.0.1.jar
+[[1;34mINFO[m] Copying poi-ooxml-schemas-3.6.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/poi-ooxml-schemas-3.6.jar
+[[1;34mINFO[m] Copying geronimo-stax-api_1.0_spec-1.0.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/geronimo-stax-api_1.0_spec-1.0.jar
+[[1;34mINFO[m] Copying selenium-support-4.16.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-support-4.16.1.jar
+[[1;34mINFO[m] Copying auto-service-annotations-1.1.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/auto-service-annotations-1.1.1.jar
+[[1;34mINFO[m] Copying byte-buddy-1.14.5.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/byte-buddy-1.14.5.jar
+[[1;34mINFO[m] Copying selenium-json-4.16.1.jar to /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-json-4.16.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:copy-resources[m [1m(copy-resources)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 11 resources from src/test/resources to target/docker-resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.3.0:jar[m [1m(default-jar)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;34mINFO[m] Building jar: /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-docker.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.3.0:test-jar[m [1m(default)[m @ [36mPageObjectModelBasics[0;1m ---[m
+[[1;34mINFO[m] Building jar: /var/jenkins_home/workspace/Selenium_docker_github/target/docker-resources/libs/selenium-docker-tests.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  17.237 s
+[[1;34mINFO[m] Finished at: 2024-12-12T04:43:59Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[0m[0m
+[8mha:////4Ppw8WpGgwWY2r4OG7Wi/UejJ24k5x+AQ1wMDq/vRissAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BmecueC+AAAA[0m[Pipeline] }
+[8mha:////4B3+anXkJ6/7HOrESGaHEshGT4SGMrtQ+YvJ7DksP7dbAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCkKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN1R/4ly+AAAA[0m[Pipeline] // stage
+[8mha:////4A+Qax9eOxwnHxFh5KJ6AplNgDyg2r7I2IwBbFZxfd3NAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUgMSCOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52WXb7j/P6g0l7b9pwgAAAA==[0m[Pipeline] stage
+[8mha:////4GISjoyYzg/GK4oXhMwjwF5zqVXPiHDuMf+hClkErwFoAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Login to Docker Registry)
+[8mha:////4Ms1pgvlcHg7IMYLCerXj/CnIAipMJDVhfsFfa8IJKKNAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] script
+[8mha:////4F1nti7cBSktDA9n1s7ojxjRAIN3RKRk6yzb83qJJHS/AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4CQi3zA387Q/OvoK3IKLGWuJG3YPu2SiGdYaq6q1WlmjAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] echo
+Logging into Docker registry.
+[8mha:////4As3Bm3tNU2+SK9TbNbTecHzO1+D2rOqLTO4L4XfcrcrAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQFdXPxHwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $DOCKER_PASSWORD
+[8mha:////4H4IWU5Gi9NiXhvS4iT+iB6d+8S3V6JdpQDNPndayO93AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] {
+[8mha:////4NuKag4hFADNwbb37k9BfRzgUZlEMpG3B4MN5RI2M7IJAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikRJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3favo5XL4AAAA=[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [DOCKER_PASSWORD]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ + echo ****docker login
+ docker.io -u guptachal --password-stdin
+/var/jenkins_home/workspace/Selenium_docker_github@tmp/durable-ce07ff78/script.sh.copy: 2: docker: not found
+[8mha:////4MYQfmVXO5gX3AtvREf+DgP0qo4H+55Og44f+qDpUi3nAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bij33Ma+AAAA[0m[Pipeline] }
+[8mha:////4N4ashS2Numh9FxFdty9CGKBRGCCUnstMyxJOdlNOFPpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbNzd1iZS+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4M+1XmPfxxP80aRlpUdRfHoYszmuJXDQtSFrERm2ibJfAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigYSEUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu32u7eED6r7dBb4AAAA=[0m[Pipeline] }
+[8mha:////4JDdeTtLlUP940XnoL2xT3XdZymZI0HhXkE6tzzAA5PRAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQQESSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwA2V2Gub4AAAA=[0m[Pipeline] // script
+[8mha:////4GeQAp1beD/cL7goZhsNqJSQOkCKS/1k3WXo5rDfUdZnAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQQESSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AnfJv2L4AAAA=[0m[Pipeline] }
+[8mha:////4AVdTHDjGsH3KuHd+LAVYHgLF13tHV4cNOQwl4sRm53yAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigYSEUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu0Ou7f4DrhE0ZL4AAAA=[0m[Pipeline] // stage
+[8mha:////4C0yxwfTC5vkRvE8GYLYMq1vH6oFxiz1/H3shx2QlEfyAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUBBvqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2l22/+TyrNwI7NtzCAAAA[0m[Pipeline] stage
+[8mha:////4HSywWXltjJceYmGJPJICvhg+42rjg/HD/vMY4pzJs8fAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAbb5KxbCAAAA[0m[Pipeline] { (Build Docker Image)
+Stage "Build Docker Image" skipped due to earlier failure(s)
+[8mha:////4EdWiRVDMgmVR46HrXtL43BNAim6SPmikbx0WJMKVUS1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBirOQHu+AAAA[0m[Pipeline] getContext
+[8mha:////4GzSgRymTjBFXfRFemE9HfPsqd0W/vDQ/8XDNmZdlIIoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BmM+Nsi+AAAA[0m[Pipeline] }
+[8mha:////4LgNne00CYk0qYbp08IgiWRGpM2v5tgHxfcOi+MdC+BwAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCkQ5R0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fTT40or4AAAA=[0m[Pipeline] // stage
+[8mha:////4FBWKcE2Bd5BySM79hOBAfhKHB8/7Xh9C00Ds2xMz2B3AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCJhQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg322y7/edZvQGxqvuMwgAAAA==[0m[Pipeline] stage
+[8mha:////4IFfskTla0nC+/kFXmJsNZNlow2faTx0gLmaEvVbrFEPAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] { (Push Docker Image)
+Stage "Push Docker Image" skipped due to earlier failure(s)
+[8mha:////4B+Bu+H/8nWoZMQVG5aE5/jm3dhTg5qorXzk9ki16D1jAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN+EEkMO+AAAA[0m[Pipeline] getContext
+[8mha:////4HhUWySlozZYpkivWKDhjS8BgZ1TfhCNmzQNUGfTY4JOAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEDW5U8vgAAAA==[0m[Pipeline] }
+[8mha:////4Fx26J4zKuTMi8wP+PtxDoDN3gBAaxYw6KAMDppbUv9SAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSQIEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7NxzZwG6+AAAA[0m[Pipeline] // stage
+[8mha:////4AQifs1AXXmryMl2GVwqYREzHrr7+u5R7SW6U4xP+4iWAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUhJhQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3u2z7zedZvQG2MEF6wgAAAA==[0m[Pipeline] stage
+[8mha:////4Ca9ChBk4tWeyfjWIUVNdz2L9hVcWurtJzy7mVCJxg0IAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUBibE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAW2++SvCAAAA[0m[Pipeline] { (Run Docker Compose)
+Stage "Run Docker Compose" skipped due to earlier failure(s)
+[8mha:////4B59qSIbDM7u7hZEyiOijbJihMlXVxvMlXfNpmuF8P1HAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN4OkKLa+AAAA[0m[Pipeline] getContext
+[8mha:////4DOb3fQltD3wkIGZ9OVHriHfWxGRPBghIvAlwZUtgCr7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN5YEWne+AAAA[0m[Pipeline] }
+[8mha:////4FvT96a1+l+t/jNqi97dn7exNSMrhOL1tHAMw8Z1Erj1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCARWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BrgEWB2+AAAA[0m[Pipeline] // stage
+[8mha:////4Ftn3XhP4rPbbPzkFZlPvWwAQKqDHtWgG2dLugKi2CrzAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCHVCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDc7bM1zedZvQEFoYwqwgAAAA==[0m[Pipeline] stage
+[8mha:////4KOlcGpmGfAcAE6I5hK2kaTcq+zKif8mP2bRjj6G23iRAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KgtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPlyKrR8IAAAA=[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4A8ls997Ley3wY9KS3sB9mstZddUnyzkmPVvzc8C9wkKAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBkhu+A6+AAAA[0m[Pipeline] echo
+Cleaning up workspace after pipeline execution.
+[8mha:////4C637b0hb+S5xc1N2L0zBhJ3BkkDjFIl8yBEjimc9qwfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgZAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN4dyYIm+AAAA[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4OzYDvbx887A4aWkBPKdLohVNY2G5lwBJjISMJAWuKyrAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgYQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8ZDe5C+AAAA[0m[Pipeline] echo
+Pipeline failed. Check the logs for details.
+[8mha:////4HqA+WCvFHhHYWmkud4pc8exwHD+rADoVVgTF+2rA053AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQxpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoPwb5Ql6+AAAA[0m[Pipeline] }
+[8mha:////4Jz59wbOlfoZOrHJFB6WxHr98q0Aj/B2zV2cujufgjCuAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRRWgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJygP+1x1/QEZexcMvgAAAA==[0m[Pipeline] // stage
+[8mha:////4AFohkDTv4y1eFWmu7cGlFsxu7AN2hZO9vINsSA5Uvq8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAedrm2+w+GaYwHvgAAAA==[0m[Pipeline] }
+[8mha:////4NHqhVBbUzY2DyMTPgHyIpRSjVwbDC0MzJWNxVota/7xAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAe9rm2uw+1ite7vgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4Dz+9x/lk7ZFRzzH3M3cPklIp2q9dxA277Csn5Jj0mUBAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiSIgGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF52Oeq6w+369s/vgAAAA==[0m[Pipeline] }
+[8mha:////4P5EnbJwruAXBuOb0l/hANHbNopEdpU0jJQ6z4v75V57AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBTQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDPtdu+wGECICDvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4GA5k0sDMYRugxixobqfUqT6pOHo2SR8xb6xTFVGqIQ7AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0Do1jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8Ane4AQL0AAAA=[0m[Pipeline] }
+[8mha:////4NOvW2/f93tm/hCmVDGOXKz+JiUdC7nkXtImuLlCrGc3AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpkKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AI5SBOO9AAAA[0m[Pipeline] // node
+[8mha:////4AGYyc2DEG2Wm66iEuWiejx4zBwZ8JVyQZCm56ljjBcSAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRKBASoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/tBdn2A8n1Uxa9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 127
+Finished: FAILURE

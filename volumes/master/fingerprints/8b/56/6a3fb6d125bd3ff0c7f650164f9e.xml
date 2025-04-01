@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-12-12 04:44:01.615 UTC</timestamp>
+  <md5sum>8b566a3fb6d125bd3ff0c7f650164f9e</md5sum>
+  <fileName>Credential id=guptachal name=guptachal/****** (docker cred for the guptachal)</fileName>
+  <usages>
+    <entry>
+      <string>Selenium_docker_github</string>
+      <ranges>21-25,27-28</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
