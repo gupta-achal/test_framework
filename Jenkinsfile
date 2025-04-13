@@ -2,27 +2,45 @@ pipeline {
     agent any
 
     environment {
-        // Docker Registry Info (replace with your own values)
         DOCKER_REGISTRY = 'docker.io' // or your private registry URL
-        DOCKER_USERNAME = 'guptachal'
-        DOCKER_PASSWORD = 'Ach@l1234567890'
         IMAGE_NAME = 'selenium-docker'
-        IMAGE_TAG = 'latest' // or use versioning, e.g., '1.0'
+        IMAGE_TAG = 'latest'
         DOCKER_COMPOSE_PATH = './docker-compose.yaml' // Path to your Docker Compose file
+        DOCKER_USERNAME = 'guptachal'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                // Checkout the code from the repository
+                echo "Checking out the code from the repository."
                 checkout scm
+            }
+        }
+
+        stage('Build and Package') {
+            steps {
+                echo "Packaging the project into a JAR file."
+                sh "mvn clean package -DskipTests"
+            }
+        }
+
+        stage('Login to Docker Registry') {
+            steps {
+                script {
+                    echo "Logging into Docker registry."
+                    withCredentials([usernamePassword(credentialsId: 'docker-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                        sh """
+                            echo "$DOCKER_PASSWORD" | docker login ${DOCKER_REGISTRY} -u "$DOCKER_USERNAME" --password-stdin
+                        """
+                    }
+                }
             }
         }
 
         stage('Build Docker Image') {
             steps {
                 script {
-                    // Build Docker image using the Dockerfile
+                    echo "Building the Docker image."
                     sh """
                         docker build -t ${DOCKER_REGISTRY}/${DOCKER_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG} .
                     """
@@ -30,35 +48,28 @@ pipeline {
             }
         }
 
-        stage('Login to Docker Registry') {
-            steps {
-                script {
-                    // Login to Docker Registry using credentials
-                    docker.withRegistry("https://${DOCKER_REGISTRY}", "${DOCKER_USERNAME}") {
-                        // Use the credentials from Jenkins
-                    }
-                }
-            }
-        }
-
         stage('Push Docker Image') {
             steps {
                 script {
-                    // Push the Docker image to the registry
+                    echo "Pushing the Docker image to the registry."
                     sh """
                         docker push ${DOCKER_REGISTRY}/${DOCKER_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG}
+                    """
+                    echo "Tagging Docker image with build number."
+                    sh """
+                        docker tag ${DOCKER_REGISTRY}/${DOCKER_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG} ${DOCKER_REGISTRY}/${DOCKER_USERNAME}/${IMAGE_NAME}:${env.BUILD_NUMBER}
+                        docker push ${DOCKER_REGISTRY}/${DOCKER_USERNAME}/${IMAGE_NAME}:${env.BUILD_NUMBER}
                     """
                 }
             }
         }
 
-        stage('Run Docker Compose') {
+        stage('Run Tests in Docker') {
             steps {
                 script {
-                    // Use Docker Compose to spin up the services
-                    sh """
-                        docker-compose -f ${DOCKER_COMPOSE_PATH} up --build
-                    """
+                    echo "Running the tests using runner.sh inside a Docker container."
+                    // Ensure runner.sh is executable and run it
+                    sh "chmod +x runner.sh && ./runner.sh"
                 }
             }
         }
@@ -66,8 +77,19 @@ pipeline {
 
     post {
         always {
-            // Clean up resources after the pipeline runs
+            echo "Cleaning up workspace and Docker resources after pipeline execution."
+            // Prune unused Docker resources to free up disk space
+            sh "docker system prune -f || true"
+            // Clean up the workspace
             cleanWs()
+        }
+        failure {
+            echo "Pipeline failed. Please check the logs for details."
+            // Optionally, add steps here to send notifications (email, Slack, etc.)
+        }
+        success {
+            echo "Pipeline executed successfully."
+            // Optionally, archive artifacts or publish test reports here
         }
     }
 }

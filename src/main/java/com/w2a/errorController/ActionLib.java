@@ -67,6 +67,7 @@ public class ActionLib extends BasePage {
             wait.until(ExpectedConditions.elementToBeClickable(element));
 
             Select dropdown = new Select(element);
+
             switch (optionType) {
                 case TEXT:
                     dropdown.selectByVisibleText(optionValue);
